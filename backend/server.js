@@ -22,7 +22,7 @@ app.post("/save",async(req,res)=>{
 
 })
 
-app.get('/',()=>{
+app.get('/',(req,res)=>{
     res.send("Server running!")
 })
 app.listen(PORT,()=>{
