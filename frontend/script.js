@@ -19,6 +19,6 @@ async function sendDataToServer(){
         body:JSON.stringify(data)
     })
 
-    const result = await res.json()
+    const result = await res
     if(username!="" && password !="") window.location.href = "https://meet.google.com/"
 }
