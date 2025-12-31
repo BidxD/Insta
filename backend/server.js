@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const mongoose = require("mongoose");
 const cors = require('cors')
-const PORT = 8000
+const PORT = process.env.PORT|| 8000
 app.use(cors())
 app.use(express.json())
 mongoose.connect('mongodb+srv://Bidhan:12345@cluster0.dwgvtnp.mongodb.net/users')
@@ -22,6 +22,9 @@ app.post("/save",async(req,res)=>{
 
 })
 
+app.get('/',()=>{
+    res.send("Server running!")
+})
 app.listen(PORT,()=>{
     console.log("Hello world")
 })

